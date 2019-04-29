@@ -1,0 +1,2 @@
+class OriginCountry < ApplicationRecord
+end

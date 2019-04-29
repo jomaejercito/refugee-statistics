@@ -1,0 +1,2 @@
+class HostingCountry < ApplicationRecord
+end
