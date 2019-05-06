@@ -5,4 +5,8 @@ get 'welcome/homepage'
 
 resources :countries, only: [:index, :show]
 
+namespace :charts do
+  get "new-countries"
+end
+
 end

@@ -1,0 +1,5 @@
+ <h1>Countries</h1>
+
+ <%= line_chart @countries.map { |country|
+     {name: country.name, data: country.population.group_by(:created_at).count}
+ } %>
