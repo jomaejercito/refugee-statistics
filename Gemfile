@@ -69,3 +69,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry'
 gem 'fusioncharts-rails'
 gem 'chartkick'
+gem 'groupdate'

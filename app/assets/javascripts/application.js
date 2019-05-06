@@ -14,3 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require Chart.bundle
+//= require chartkick
+//= require fusioncharts/fusioncharts
+//= require fusioncharts/fusioncharts.theme.fusion
