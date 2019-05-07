@@ -1,5 +1,7 @@
  <h1>Countries</h1>
 
- <%= line_chart @countries.map { |country|
-     {name: country.name, data: country.population.group_by(:created_at).count}
- } %>
+ <div id="chart-4" style="height: 300px; text-align: center; color: #999; line-height: 300px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif; margin-bottom: 20px;">
+ </div>
+ <script type="text/javascript">
+   new Chartkick.BarChart("chart-4", [["India",16.6],["Mexico",16],["Russia",10.6],["China",10],["Bangladesh",7.5]], {});
+ </script>

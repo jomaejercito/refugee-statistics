@@ -1,18 +1,10 @@
-Country.create(name: "India", year: 1990, population: 7)
-
-#country_list = [
-#  [ "Germany", 81831000 ],
-#  [ "France", 65447374 ],
-#  [ "Belgium", 10839905 ],
-#  [ "Netherlands", 16680000 ]
-#]
-#country_list.each do |name, population|
-#  Country.create( name: name, population: population )
-#end
-#Germany = [
-#  [ 1990, 81831000 ],
-#  [ 1995, 65447374 ],
-#  [ 2000, 10839905 ],
-#  [ 2005, 16680000 ]
-#]
-#HostingCountry.create(name: "Germany", year: 1990, population: 5.9)
+Country.create(name: "India", population: 16.6)
+Country.create(name: "Mexico", population: 13)
+Country.create(name: "Russia", population: 10.6)
+Country.create(name: "China", population: 10)
+Country.create(name: "Bangladesh", population: 7.5)
+Country.create(name: "Syria", population: 6.9)
+Country.create(name: "Pakistan", population: 6)
+Country.create(name: "Ukraine", population: 5.9)
+Country.create(name: "Ukraine", population: 5.7)
+Country.create(name: "Ukraine", population: 4.9)
