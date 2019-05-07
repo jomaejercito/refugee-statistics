@@ -1,4 +1,4 @@
-class CountriesController < ApplicationController
+class OriginsController < ApplicationController
   def index
     @chart = Fusioncharts::Chart.new({
          	:height => 400,
