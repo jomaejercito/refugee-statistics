@@ -12,6 +12,40 @@
  *
  *= require_tree .
  *= require_self
+ *= @import "bootstrap-sprockets";
+ *= @import "bootstrap";
  */
- @import "bootstrap-sprockets";
- @import "bootstrap";
+
+
+
+p.lead {
+  position: relative;
+  text-align: center;
+}
+
+
+h1 {
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+}
+
+h4 {
+  position: relative;
+  text-align: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
