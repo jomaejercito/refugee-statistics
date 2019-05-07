@@ -17,12 +17,22 @@
  */
 
 
-
+/*
 p.lead {
   position: relative;
   text-align: center;
 }
+*/
 
+.card {
+  width: 800px;
+  height: 260px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
 
 h1 {
   position: relative;
@@ -45,7 +55,9 @@ h4 {
 }
 
 button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 500px;
+  height: 200px;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
