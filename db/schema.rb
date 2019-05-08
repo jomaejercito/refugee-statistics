@@ -16,16 +16,12 @@ ActiveRecord::Schema.define(version: 2) do
     t.string "name"
     t.integer "year"
     t.integer "population"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "origins", force: :cascade do |t|
     t.string "name"
     t.integer "year"
     t.integer "population"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end
