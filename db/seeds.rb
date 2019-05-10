@@ -1,10 +1,34 @@
-Origin.create(name: "Syria", population: 6309000)
-Origin.create(name: "Afghanistan", population: 2624000)
-Origin.create(name: "South Sudan", population: 2440000)
-Origin.create(name: "Myanmar", population: 1157000)
-Origin.create(name: "Somalia", population: 986000)
-Origin.create(name: "Sudan", population: 694000)
-Origin.create(name: "Congo", population: 621000)
-Origin.create(name: "Central African Republic", population: 546000)
-Origin.create(name: "Eritrea", population: 486000)
-Origin.create(name: "Burundi", population: 439000)
+origin_list = [
+  [ "Syria", 6309000 ],
+  [ "Afghanistan", 2624000 ],
+  [ "South Sudan", 2440000 ],
+  [ "Myanmar", 1157000 ],
+  [ "Somalia", 986000 ],
+  [ "Sudan", 694000 ],
+  [ "Congo", 621000 ],
+  [ "Central African Republic", 546000 ],
+  [ "Eritrea", 486000 ],
+  [ "Burundi", 439000 ]
+]
+
+origin_list.each do |name, population|
+  Origin.create( name: name, population: population )
+end
+
+
+destination_list = [
+  [ "Turkey", 3115000 ],
+  [ "Jordan", 2929000 ],
+  [ "Palestinian Terrirories", 2155000 ],
+  [ "Lebanon", 1559000 ],
+  [ "Pakistan", 1357000 ],
+  [ "Germany", 1257000 ],
+  [ "Uganda", 1163000 ],
+  [ "Iran", 978000 ],
+  [ "USA", 816000 ],
+  [ "Ethiopia", 794000 ]
+]
+
+destination_list.each do |name, population|
+  Destination.create( name: name, population: population )
+end
