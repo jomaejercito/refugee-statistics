@@ -1,17 +1,31 @@
-<div class="jumbotron">
-  <h1 class="display-3">Refugee Statistics</h1>
-  <p class="lead">The past decade has seen substantial growth in the global population of
-forcibly displaced people. In 2007, this population numbered 42.7 million;
-over the last 10 years, this figure has increased by over 50 per cent. Today 1 out of every 110 people in the world is displaced, compared with 1 in
-157 a decade ago, with much of this increase having occurred over the last
-five years. While the Syrian conflict contributed significantly to this increase,
-there have been other major displacements throughout the world over the
-last five years, notably in and from Burundi, Central African Republic, the
-DRC, Iraq, Myanmar, South Sudan, Sudan, Ukraine, and Yemen.</p>
-</div>
+<div class="swiper-container hero-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide hero-content-wrap">
+            <img src="images/hero.jpg" alt="">
 
-<div class="info">
-  <%= link_to "Refugee Facts", facts_path, class: "btn btn-primary btn-lg btn-block" %>
-  <%= link_to "Top Countries of Origin for Refugees and Asylum Seekers", origins_path, class: "btn btn-primary btn-lg btn-block" %>
-  <%= link_to "Top Countries of Destination for Refugees and Asylum Seekers", destinations_path, class: "btn btn-primary btn-lg btn-block" %>
-</div>
+            <div class="hero-content-overlay position-absolute w-100 h-100">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                                <h1>Refugees & Asylees</h1>
+                            </header><!-- .entry-header -->
+                            <div class="entry-content mt-4">
+                                <p>Globally, the forcibly displaced population increased in 2017 by 2.9 million.
+By the end of the year, 68.5 million individuals were forcibly displaced worldwide as
+a result of persecution, conflict, or generalized violence. As a result, the world’s
+forcibly displaced population remained yet again at a record high.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .hero-content-overlay -->
+        </div><!-- .hero-content-wrap -->
+
+    <div class="pagination-wrap position-absolute w-100">
+        <div class="container">
+            <div class="swiper-pagination"></div>
+        </div><!-- .container -->
+    </div><!-- .pagination-wrap -->
+
+</div><!-- .hero-slider -->

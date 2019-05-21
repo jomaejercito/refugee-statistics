@@ -17,8 +17,7 @@
 //= require jquery_ujs
 //= require jquery.easing
 //= require_tree .
-//= require Chart.bundle
-//= require chartkick
 //= require fusioncharts/fusioncharts
 //= require fusioncharts/fusioncharts.charts
 //= require fusioncharts/themes/fusioncharts.theme.fint
+//= require custom
