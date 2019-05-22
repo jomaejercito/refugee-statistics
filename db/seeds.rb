@@ -53,3 +53,6 @@ end
 # Destination.create(name: "Germany")
 # Destination.create(name: "Bangladesh")
 # Destination.create(name: "Ethiopia")
+
+# create table sample ( country char(3), year char(4), pop_in int, pop_out int);
+# insert into sample values (‘CN’, ‘2012’, 3234234234, 32342342344);
