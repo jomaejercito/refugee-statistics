@@ -1,6 +1,6 @@
 class OriginsController < ApplicationController
   def index
-    origins = Origin.select(:name, :population, :id).order(population: :desc).limit(10)
+    origins = Origin.select(:country_id, :year_id, :population).order(population: :desc).where(year_id: 7).limit(10)
     origin_countries = []
     # Iterate through the list of countries in the database and create an array of hashes that
     # stores the label for each country data plot and its population value.
@@ -8,9 +8,9 @@ class OriginsController < ApplicationController
     # data plot.
     origins.each do |origin|
     origin_countries.push({
-        :label => origin.name,
+        :label => origin.country.name,
         :value => origin.population,
-        :link => "origins/#{origin.id}"
+        :link => "origins/#{origin.country.id}"
     })
     end
     # Create a new FusionCharts instance that initializes the chart height, width, type, container div
@@ -28,7 +28,7 @@ class OriginsController < ApplicationController
                 :yAxisName => 'Population',
                 :theme => 'fusion',
             },
-            # The data in the array of hashes is now stored in the `top_ten_populous_countries`
+            # The data in the array of hashes is now stored in the `origin_countries`
             # variable in the FusionCharts consumable format.
             :data => origin_countries
         }
