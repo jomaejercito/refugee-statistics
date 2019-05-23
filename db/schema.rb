@@ -10,18 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2) do
+ActiveRecord::Schema.define(version: 4) do
+
+  create_table "countries", force: :cascade do |t|
+    t.string "name"
+  end
 
   create_table "destinations", force: :cascade do |t|
-    t.string "name"
-    t.integer "year"
+    t.integer "country_id"
+    t.integer "year_id"
     t.integer "population"
   end
 
   create_table "origins", force: :cascade do |t|
-    t.string "name"
-    t.integer "year"
+    t.integer "country_id"
+    t.integer "year_id"
     t.integer "population"
+  end
+
+  create_table "years", force: :cascade do |t|
+    t.string "year"
   end
 
 end

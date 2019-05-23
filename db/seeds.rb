@@ -1,58 +1,101 @@
+country_list = [
+  "Syria",
+  "Afghanistan",
+  "South Sudan",
+  "Myanmar",
+  "Somalia",
+  "Sudan",
+  "Congo",
+  "Central African Republic",
+  "Eritrea",
+  "Burundi"
+]
+
+country_list.each do |name|
+  Country.create( name: name )
+end
+
+year_list = [
+  "1990",
+  "1995",
+  "2000",
+  "2005",
+  "2010",
+  "2015",
+  "2017"
+]
+
+year_list.each do |year|
+  Year.create( year: year )
+end
+
 origin_list = [
-  [ "Syria", 6308619 ],
-  [ "Afghanistan", 2624225 ],
-  [ "South Sudan", 2439868 ],
-  [ "Myanmar", 1156732 ],
-  [ "Somalia", 986356 ],
-  [ "Sudan", 694506 ],
-  [ "Congo", 620775 ],
-  [ "Central African Republic", 545498 ],
-  [ "Eritrea", 486169 ],
-  [ "Burundi", 439280 ]
+  [ 1, 1, 2148 ],
+  [ 1, 2, 7994 ],
+  [ 1, 3, 5871 ],
+  [ 1, 4, 16401 ],
+  [ 1, 5, 18482 ],
+  [ 1, 6, 4873243 ],
+  [ 1, 7, 6308619 ],
+  [ 2, 1, 6339095 ],
+  [ 2, 2, 2679133 ],
+  [ 2, 3, 3587366 ],
+  [ 2, 4, 2166149 ],
+  [ 2, 5, 3054709 ],
+  [ 2, 6, 2666305 ],
+  [ 2, 7, 2624225 ],
+  [ 3, 6, 778718 ],
+  [ 3, 7, 2439868 ],
+  [ 4, 1, 28 ],
+  [ 4, 2, 152298 ],
+  [ 4, 3, 137128 ],
+  [ 4, 4, 164864 ],
+  [ 4, 5, 415670 ],
+  [ 4, 6, 451805 ],
+  [ 4, 7, 1156732 ],
+  [ 5, 1, 470174 ],
+  [ 5, 2, 638698 ],
+  [ 5, 3, 475655 ],
+  [ 5, 4, 395553 ],
+  [ 5, 5, 770154 ],
+  [ 5, 6, 1123156 ],
+  [ 5, 7, 986356 ],
+  [ 6, 1, 523998 ],
+  [ 6, 2, 445280 ],
+  [ 6, 3, 494363 ],
+  [ 6, 4, 693632 ],
+  [ 6, 5, 387288 ],
+  [ 6, 6, 627087 ],
+  [ 6, 7, 694506 ],
+  [ 7, 1, 67423 ],
+  [ 7, 2, 89738 ],
+  [ 7, 3, 371713 ],
+  [ 7, 4, 430929 ],
+  [ 7, 5, 476693 ],
+  [ 7, 6, 541496 ],
+  [ 7, 7, 620775 ],
+  [ 8, 1, 100 ],
+  [ 8, 2, 242 ],
+  [ 8, 3, 139 ],
+  [ 8, 4, 42890 ],
+  [ 8, 5, 164905 ],
+  [ 8, 6, 471105 ],
+  [ 8, 7, 486169 ],
+  [ 9, 1, 43 ],
+  [ 9, 2, 286712 ],
+  [ 9, 3, 376851 ],
+  [ 9, 4, 144066 ],
+  [ 9, 5, 222460 ],
+  [ 9, 6, 407499 ],
+  [ 9, 7, 486169 ],
+  [ 10, 1, 191622 ],
+  [ 10, 2, 350582 ],
+  [ 10, 3, 568084 ],
+  [ 10, 4, 438706 ],
+  [ 10, 5, 84064 ],
+  [ 10, 6, 292764 ],
+  [ 10, 7, 439208 ]
 ]
-
-origin_list.each do |name, population|
-  Origin.create( name: name, population: population )
+origin_list.each do |country_id, year_id, population|
+  Origin.create( country_id: country_id, year_id: year_id, population: population )
 end
-
-# Origin.create(name: "Syria")
-# Origin.create(name: "Afghanistan")
-# Origin.create(name: "South Sudan")
-# Origin.create(name: "Myanmar")
-# Origin.create(name: "Somalia")
-# Origin.create(name: "Sudan")
-# Origin.create(name: "Congo")
-# Origin.create(name: "Central African Republic")
-# Origin.create(name: "Eritrea")
-# Origin.create(name: "Burundi")
-
-destination_list = [
-  [ "Turkey", 3480310 ],
-  [ "Jordan", 2896162 ],
-  [ "West Bank & Gaza", 2213963 ],
-  [ "Lebanon", 1468137 ],
-  [ "Pakistan", 1393132 ],
-  [ "Uganda", 1350495 ],
-  [ "Iran", 979485 ],
-  [ "Germany", 970302 ],
-  [ "Bangladesh", 932209 ],
-  [ "Ethiopia", 906585 ]
-]
-
-destination_list.each do |name, population|
-  Destination.create( name: name, population: population )
-end
-
-# Destination.create(name: "Turkey")
-# Destination.create(name: "Jordan")
-# Destination.create(name: "West Bank & Gaza")
-# Destination.create(name: "Lebanon")
-# Destination.create(name: "Pakistan")
-# Destination.create(name: "Uganda")
-# Destination.create(name: "Iran")
-# Destination.create(name: "Germany")
-# Destination.create(name: "Bangladesh")
-# Destination.create(name: "Ethiopia")
-
-# create table sample ( country char(3), year char(4), pop_in int, pop_out int);
-# insert into sample values (‘CN’, ‘2012’, 3234234234, 32342342344);
