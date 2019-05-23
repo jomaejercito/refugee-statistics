@@ -2,16 +2,9 @@
   <%= render '/destinations/section1' %>
 </div>
 
-<!--
-<div id="chart-4" style="height: 300px; text-align: center; color: #999; line-height: 300px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif; margin-bottom: 20px;">
-  <script type="text/javascript">
-  new Chartkick.BarChart("chart-4", [["Syria",6309000],["Afghanistan",2624000],["South Sudan",2440000],["Myanmar",1157000],["Somalia",986000],["Sudan",694000],["Congo",621000],["Cent. Af. Rep.",546000],["Eritrea",486000],["Burundi",439000]], {});
-  </script>
-</div>
--->
 <div class="chart"
- <div id="chart-container">
- <%= @chart.render() %>
- </div>
+  <div id="chart-container">
+  <%= @chart.render() %>
+  </div>
 </div>
 <br><br>
