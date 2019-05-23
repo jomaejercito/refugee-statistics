@@ -5,6 +5,15 @@ This project shows facts about the refugee crisis, terminologies, and worldwide 
 
 Hope you enjoy this project!
 
+## Installation
+* Clone the repository into your computer
+* cd into the refugee-statistcs directory
+* Run `bundle install` to install the dependencies
+* Run `rake db:migrate` to set up the migrations
+* Run `rake db:seed` to add the seed file
+* Run `rails s` to start the server
+* Open your browser and enter https://localserver:3000 to start using Refugee Statistics!
+
 
 # Sources
 
