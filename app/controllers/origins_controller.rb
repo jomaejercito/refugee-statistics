@@ -52,7 +52,6 @@ class OriginsController < ApplicationController
         :renderAt => 'chart-container',
         :dataSource => {
             :chart => {
-                :caption => 'Top Countries of Origin for Refugees and Asylum Seekers',
                 :xAxisname => 'Year',
                 :yAxisName => 'Population',
                 :theme => 'ocean',
@@ -60,7 +59,7 @@ class OriginsController < ApplicationController
             :data => origin_countries
         }
     })
-  set_origin  
+  set_origin
   end
 
 end

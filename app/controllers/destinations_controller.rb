@@ -52,7 +52,6 @@ class DestinationsController < ApplicationController
         :renderAt => 'chart-container',
         :dataSource => {
             :chart => {
-                :caption => 'Top Countries of Destination for Refugees and Asylum Seekers',
                 :xAxisname => 'Year',
                 :yAxisName => 'Population',
                 :theme => 'ocean',
