@@ -59,7 +59,7 @@ class OriginsController < ApplicationController
             :data => origin_countries
         }
     })
-  set_origin
+    set_country
   end
 
 end
