@@ -36,7 +36,30 @@ class OriginsController < ApplicationController
   end
 
   def show
+    origins = Origin.select(:country_id, :year_id, :population).where(country_id: params[:id]).limit(7)
+    origin_countries = []
+    origins.each do |origin|
+    origin_countries.push({
+        :label => origin.year.year,
+        :value => origin.population,
+    })
+    end
 
+    @chart = Fusioncharts::Chart.new({
+        :height => 500,
+        :width => 900,
+        :type => 'line',
+        :renderAt => 'chart-container',
+        :dataSource => {
+            :chart => {
+                :caption => 'Top Countries of Origin for Refugees and Asylum Seekers',
+                :xAxisname => 'Year',
+                :yAxisName => 'Population',
+                :theme => 'ocean',
+            },
+            :data => origin_countries
+        }
+    })
   end
 
 end
