@@ -1,7 +1,7 @@
 # Refugee Statistics
 Welcome to the Refugee Statistics Project! This is a project I have made in collaboration with my mentor, product architect Or Pardo. We worked on this together with Agile workflow.
 
-This project shows facts about the refugee crisis, terminologies, and worldwide statistics. This project was built with HTML/CSS, Ruby, and Rails backend. The CSS layout I used is called "thecharity", which I downloaded from colorlib.
+This project shows facts about the refugee crisis, terminologies, and worldwide statistics. This project was built with HTML/CSS and Ruby on Rails. The CSS layout I used is called "thecharity", which I downloaded from colorlib. I implemented charts in this project from FusionCharts. The charts are animated and can also be clicked on.
 
 Hope you enjoy this project!
 
