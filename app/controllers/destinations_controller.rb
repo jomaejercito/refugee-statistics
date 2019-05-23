@@ -59,6 +59,6 @@ class DestinationsController < ApplicationController
             :data => destination_countries
         }
     })
-  set_destination
+  set_country
   end
 end
